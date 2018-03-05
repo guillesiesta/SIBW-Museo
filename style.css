@@ -14,7 +14,7 @@ body{
   border-width: 1px;
 }
 
-header{
+header, footer{
   margin-top:1%;
   margin-left: auto;
   margin-right: auto;
@@ -72,6 +72,8 @@ header{
 #menu_lista{
   display: inline;
   padding-right: 7%;
+  border:1px solid black;
+
 }
 
 a{
