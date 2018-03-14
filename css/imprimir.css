@@ -1,0 +1,19 @@
+html{
+  margin-left: 15%;
+  margin-right: 15%;
+  font-family: "Times New Roman", Times, serif;
+  text-align: justify;
+}
+
+#logo{
+  float: right;
+  width: 10%;
+  height: 10%;
+}
+#barra_lateral{
+  visibility: hidden;
+}
+
+aside, header, #foo_izq, #fotos_obra, a{
+  display: none;
+}
