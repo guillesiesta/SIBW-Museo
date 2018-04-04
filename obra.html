@@ -3,6 +3,7 @@
     <meta charset="utf-8">
     <title>Universidad de Granada</title>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script type="text/javascript" src="js/form.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="img/favicon.ico" type="image/x-icon" rel="shortcut icon" />
 </head>
@@ -44,21 +45,39 @@
 
           <h2 id="aut_obra">Autor Obra</h2>
           <h3 id="dat_obra">Datación</h3>
+          <input type="button" id="bt_comentario" value="Ver Comentarios" onclick="mostrar()"/>
         </div>
         <div id="fotos_obra">
-          <img id="f1_obra" alt="Imagen 1" src="img/logo.png">
-          <img id="f2_obra" alt="Imagen 2" src="img/logo.png">
+          <img class="f_obra" alt="Imagen 1" src="img/logo.png" />
+          <img class="f_obra" alt="Imagen 2" src="img/logo.png"/>
         </div>
         <div id="des_obra">
-          <p id="texto">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+        </br> <p id="texto">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
             nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
              vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus
              elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis,
               feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.
               Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel,
-              luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. 
+              luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.
           </p>
         </div>
+        <div id="abs_comentario">
+          <div id="form_comentario">
+                  <form method="post">
+                      <fieldset>
+                      <input id="usu" type="text" name="username" placeholder="Nombre.."></input>
+                          <input id="cor" type="email" name="username" placeholder="Correo.."></input>
+                      <textarea id="com" placeholder="Deje un comentario.." onkeyup="reemplaza()"></textarea>
+                      <button type="button" onclick="enviar()">Enviar</button>
+                  </fieldset>
+                  </form>
+          </div>
+
+          <div id="comentarios">
+          <p>Paco:</p> <p>Me encanta</p>
+          <p>Luis:</p> <p>Menuda pasada!!!!!!</p>
+          <p>Javier:</p> <p>QUE VIVA EL CARNAVAL</p>
+          </div>
     </section>
 </div>
 <footer>
